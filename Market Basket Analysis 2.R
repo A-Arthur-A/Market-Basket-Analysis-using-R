@@ -25,3 +25,6 @@ data_item <- data_item[1:3]
 
 #Konversi data_item menjadi data frame dengan kolom Nama_Produk dan Jumlah
 data_item <- data.frame("Nama Produk"=names(data_item), "Jumlah"=data_item, row.names=NULL)
+
+#Menulis File Top 3 Item
+write.csv(data_item, file="top3_item.txt", eol="\r\n")
