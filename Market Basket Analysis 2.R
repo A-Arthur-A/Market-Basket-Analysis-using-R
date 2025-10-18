@@ -13,3 +13,5 @@ transaksi@itemsetInfo
 #Menampilkan transaksi dalam bentuk matrix
 transaksi@data
 
+#Menampilkan jumlah kemunculan item pada keseluruhan transaksi
+itemFrequency(transaksi, type="absolute")
