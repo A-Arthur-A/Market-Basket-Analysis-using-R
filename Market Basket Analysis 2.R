@@ -15,7 +15,7 @@ transaksi@data
 
 #Menampilkan jumlah kemunculan item pada keseluruhan transaksi
 data_item <- itemFrequency(transaksi, type="absolute")
-data_item
+print(data_item)
 
 #Tampilan item frequency plot
 itemFrequencyPlot(transaksi)
@@ -31,4 +31,5 @@ data_item <- data.frame("Nama Produk"=names(data_item), "Jumlah"=data_item, row.
 
 #Menulis File Top 3 Item
 write.csv(data_item, file="top3_item.txt", eol="\r\n")
+
 
