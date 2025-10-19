@@ -17,6 +17,9 @@ transaksi@data
 data_item <- itemFrequency(transaksi, type="absolute")
 data_item
 
+#Tampilan item frequency plot
+itemFrequencyPlot(transaksi)
+
 #Melakukan sorting pada data_item
 data_item <- sort(data_item, decreasing = TRUE)
 
@@ -28,3 +31,4 @@ data_item <- data.frame("Nama Produk"=names(data_item), "Jumlah"=data_item, row.
 
 #Menulis File Top 3 Item
 write.csv(data_item, file="top3_item.txt", eol="\r\n")
+
